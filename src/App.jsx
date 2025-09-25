@@ -5,7 +5,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const App = () => {
   const rows = 20;
-  const cols = 20;
+  const cols = 15;
   const startPoint = [0, 0];
   const endPoint = [rows - 1, cols - 1];
 
@@ -122,8 +122,15 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4 flex flex-col items-center">
-      <h1 className="text-2xl font-bold mb-4">Pathfinding Visualizer</h1>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-200 via-purple-200 to-pink-200 p-6 flex flex-col items-center">
+      <h1 className="text-3xl font-bold mb-2 text-gray-800">
+        Pathfinding Visualizer
+      </h1>
+      <p className="mb-4 text-gray-700 text-center">
+        Click on any block to create/remove obstacles. <br />
+        Use the speed slider to control the animation speed.
+      </p>
+
       <div className="flex gap-2 justify-center mb-4 flex-wrap">
         <button
           className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
@@ -159,7 +166,7 @@ const App = () => {
           max={100}
           step={5}
           value={speed}
-          className="accent-indigo-500 ml-2"
+          className="accent-indigo-600 ml-2"
           onChange={(e) => setSpeed(+e.target.value)}
         />
       </div>
