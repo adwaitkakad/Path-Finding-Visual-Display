@@ -56,7 +56,7 @@ const App = () => {
 
     mat[i][j] = 0;
     setMaze(mat.map((r) => r.slice()));
-    await sleep(120 - speed);
+    //await sleep(120 - speed);
     return false;
   };
 
