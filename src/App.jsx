@@ -5,7 +5,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const App = () => {
   const rows = 20;
-  const cols = 15;
+  const cols = 20;
   const startPoint = [0, 0];
   const endPoint = [rows - 1, cols - 1];
 
