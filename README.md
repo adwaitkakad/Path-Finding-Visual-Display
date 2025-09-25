@@ -32,3 +32,12 @@ cd pathfinding-visualizer
 npm install
 npm start
 ```
+
+## Sreenshots
+
+## Screenshot
+
+![Visualizer Screenshot](src/assets/bfs.png)
+![Visualizer Screenshot](src/assets/final output.png)
+![Visualizer Screenshot](src/assets/plotting obstacles.png)
+![Visualizer Screenshot](src/assets/start.png)
